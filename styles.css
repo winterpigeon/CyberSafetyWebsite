@@ -1,5 +1,8 @@
 .navigationbar {
-	background-color: rgba(109, 165, 202, 0.7);
+	background-color: white;
+}
+.navigationbar p {
+	color: black;
 }
 .navicon {
 	margin: 0 1rem 0 0;
