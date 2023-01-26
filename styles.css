@@ -1,13 +1,7 @@
-.navigationbar {
-	background-color: white;
-}
-.navigationbar p {
+.navbar p {
 	color: black;
 }
 .navicon {
 	margin: 0 1rem 0 0;
 	padding: 0 0 0 0;
-}
-.middlepages {
-	margin: 0 0 0 auto;
 }
