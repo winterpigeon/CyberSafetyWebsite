@@ -1,10 +1,69 @@
-.navbar p {
-	color: white;
+* {
+	background-color: black;
 }
+p,
+h3,
+label {
+	color: white;
+	background-color: transparent;
+}
+
 .navicon {
 	margin: 0 1rem 0 0;
 	padding: 0 0 0 0;
 }
-.navbar {
-	background-color: #272e34;
+
+/*	The css for contact us lies here	*/
+.feedback {
+	max-width: 75%;
+}
+.contact {
+	display: flex;
+	min-width: 80vh;
+	min-height: 80vh;
+}
+.contactimage {
+	min-height: 15vh;
+	flex: 1;
+	margin: auto 0 auto 0;
+}
+.form {
+	min-height: 30vh;
+	flex: 1;
+	margin: 0 0 auto 0;
+}
+.feedback {
+	max-width: 75%;
+	margin: 5% 10% 10% 10%;
+}
+input[type="text"] {
+	background-color: #d3d3d3;
+	color: black;
+	width: 50%;
+	margin: 1% auto 5% auto;
+}
+input[type="email"] {
+	background-color: #d3d3d3;
+	color: black;
+	width: 50%;
+	margin: 1% auto 5% auto;
+}
+input[type="submit"] {
+	background-color: #90ee90;
+	color: black;
+	width: 25%;
+	margin: 1% auto 5% auto;
+}
+label {
+	width: 100%;
+	color: black;
+}
+textarea {
+	background-color: #d3d3d3;
+	margin: 1% auto 0 auto;
+	width: 75%;
+}
+form {
+	background: linear-gradient(to bottom right, #bf40bf, #cf9fff);
+	border-radius: 5%;
 }
