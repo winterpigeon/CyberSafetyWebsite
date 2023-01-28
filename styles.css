@@ -1,7 +1,10 @@
 .navbar p {
-	color: black;
+	color: white;
 }
 .navicon {
 	margin: 0 1rem 0 0;
 	padding: 0 0 0 0;
+}
+.navbar {
+	background-color: #272e34;
 }
