@@ -7,12 +7,13 @@ label {
 	color: white;
 	background-color: transparent;
 }
-
 .navicon {
-	margin: 0 1rem 0 0;
+	margin: 0 0 0 0;
 	padding: 0 0 0 0;
 }
-
+.navlink {
+	margin-right: 0;
+}
 /*	The css for contact us lies here	*/
 .feedback {
 	max-width: 75%;
