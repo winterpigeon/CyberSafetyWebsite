@@ -1,77 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-			crossorigin="anonymous"
-		/>
-		<link rel="stylesheet" href="./styles.css" />
-		<title>Are you Cyber Safe?</title>
-	</head>
-	<body>
-		<nav class="navbar navbar-expand-lg">
-			<div class="container-fluid">
-				<a class="navbar-brand" href="./homepage.html">
-					<p class="navicon">Cyber Safety</p>
-				</a>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Are you Cyber Safe?</title>
+  </head>
+  <style>
+    body {
+      background-color: black;
+    }
+    .page_container {
+      width: 100vw;
+      height: 100vmax;
+      display: flex;
+      flex-flow: row wrap;
+      column-gap: 10vw;
+    }
+    .head_container {
+      display: flex;
+      margin-top: 9vh;
+      flex-direction: column;
+      min-width: 500px;
+      min-height: 280px;
+      height: 35vw;
+      width: 50vw;
+      justify-content: center;
+      align-items: center;
+      background-image: url("./Assets/blob.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 112%;
+      overflow: hidden;
+    }
+    .gradient_text {
+      font-size: max(4vw, 35px);
+      background: linear-gradient(to right, #6474d3, #cf23cf, #6474d3);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    }
+    h1 {
+      display: flex;
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      position: relative;
+      z-index: -1;
+      bottom: 25vh;
+      object-fit: cover;
+    }
+    .cont2 {
+      display: flex;
+      padding-top: 20vh;
+      height: 60vh;
+      width: 33vw;
+      flex-direction: column;
+      min-width: 300px;
+      min-height: 450px;
+    }
+    .button {
+      color: white;
+      text-align: center;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .but1 {
+      background-color: #293db2;
+      border-radius: 20px;
+      width: 130px;
+      height: 35px;
+      margin-bottom: 4px;
+    }
+    .cont3 {
+      width: 100vw;
+      height: auto;
+      margin-left: 5vw;
+      margin-right: 5vw;
+    }
+    p {
+      font-size: large;
+    }
+    .cardscontainer {
+      display: flex;
+      width: 70vw;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .cards {
+      margin: 15px;
+      display: flex;
+      flex-direction: column;
+      background-color: #4b5dc2;
+      width: 25vmax;
+      height: 30vmax;
+      border-radius: 5px;
+      border-style: solid;
+      border-color: rgb(0, 0, 0);
+      justify-content: space-around;
+      box-shadow: 2px 2px 20px #020520;
+    }
+    .cards:hover {
+      animation-name: hover-animation1;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+    }
+    .but1:hover {
+      animation-name: hover-animation2;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+    }
+    @keyframes hover-animation2 {
+      100% {
+        border-style: solid;
+        border-color: #0f0054;
+        border-width: 3px;
+        background-color: #c2c3fa;
+      }
+    }
+    @keyframes hover-animation1 {
+      100% {
+        border-style: solid;
+        border-color: #a50fa5;
+        border-width: 3px;
+        background-color: #ffffff;
+        transform: scale(1.03);
+      }
+    }
+    .quizbutton {
+      display: inline-flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+    }
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./homepage.html">
+          <p class="navicon">Cyber Safety</p>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-				<div
-					class="collapse navbar-collapse"
-					id="navbarSupportedContent"
-					style="max-width: 100vh"
-				>
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<li class="nav-item">
-							<a class="nav-link" href="#">
-								<p class="navicon">
-									<img src="./Assets/lock.gif" width="28%" />
-									Password Checker
-								</p>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">
-								<p class="navicon">
-									<img src="./Assets/virus.gif" width="34%" />
-									Virus Checker
-								</p>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">
-								<p class="navicon">
-									<img src="./Assets/recommend.gif" width="32%" />
-									Products
-								</p>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="./contactpage.html">
-								<p class="navicon">
-									<img src="./Assets/location.gif" width="30%" />
-									Contact Us
-								</p>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</body>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarSupportedContent"
+          style="max-width: 100vh"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <p class="navicon">
+                  <img src="./Assets/lock.gif" width="28%" />
+                  Password Checker
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <p class="navicon">
+                  <img src="./Assets/virus.gif" width="34%" />
+                  Virus Checker
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <p class="navicon">
+                  <img src="./Assets/recommend.gif" width="32%" />
+                  Products
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contactpage.html">
+                <p class="navicon">
+                  <img src="./Assets/location.gif" width="30%" />
+                  Contact Us
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="page_container">
+      <div class="head_container">
+        <h1 class="gradient_text">Cyber Safety</h1>
+        <h1 style="font-size: max(3vw, 25px); color: azure">Awareness</h1>
+      </div>
+      <div class="cont2">
+        <div class="quizbutton">
+          <h2 style="color: azure; font-size: 2.5vw; font-style: oblique">
+            Are you cyber safe ?
+          </h2>
+          <button class="button but1">Quiz</button>
+        </div>
+        <p id="bruh" style="color: rgb(116, 116, 116)">
+          Take this quiz to find out
+        </p>
+        <br />
+        <br />
+        <h3 style="color: azure; font-size: 2.5vw">What is cyber safety ?</h3>
+        <p style="color: #a7a7a7">
+          Cyber Safety to be safe on the internet and is the act of maximizing a
+          user's awareness of personal safety and security risks to private
+          information and property associated with using the internet, and the
+          self-protection from computer crime
+        </p>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <div class="cont3">
+        <h3 style="color: azure; font-size: 2.5vw">What are Cyber Threats ?</h3>
+        <p style="color: #a7a7a7">
+          A cyber or cybersecurity threat is a malicious act that seeks to
+          damage data, steal data, or disrupt digital life in general. Cyber
+          threats include computer viruses, data breaches, Denial of Service
+          (DoS) attacks, and other attack vectors. Cyber threats also refer to
+          the possibility of a successful cyber attack that aims to gain
+          unauthorized access, damage, disrupt, or steal an information
+          technology asset, computer network, intellectual property, or any
+          other form of sensitive data. Cyber threats can come from within an
+          organization by trusted users or from remote locations by unknown
+          parties.
+        </p>
+        <h3 style="color: azure; font-size: 2.5vw">Uhh ... in English ?</h3>
+        <p style="color: #a7a7a7">
+          Lets illustrate this with a few examples. An attacker can phish you
+          into giving them your login information. With your login information,
+          they may harm your account or use your data. UPI scams, viruses like
+          Morris Worm, nimda, ILOVEYOU, trojans etc are also some examples of a
+          threat. A popular example is in the 2020 pandemic, a lot of webcams
+          were hacked.
+        </p>
+        <h3 style="color: azure; font-size: 2.5vw">
+          How can I be safe in the digital age ?
+        </h3>
+        <p style="color: #a7a7a7">Don't worry, we've got you covered.</p>
+        <div class="cardscontainer">
+          <div class="cards"></div>
+          <div class="cards"></div>
+          <div class="cards"></div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
