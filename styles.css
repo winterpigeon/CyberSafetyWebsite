@@ -52,7 +52,7 @@ input[type="email"] {
 	border: none;
 }
 input[type="submit"] {
-	background-color: #90ee90;
+	background-color: rgb(144, 144, 221);
 	width: 25%;
 	margin: 1% auto 5% auto;
 }
